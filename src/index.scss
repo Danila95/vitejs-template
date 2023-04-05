@@ -1,0 +1,21 @@
+// common.components
+
+// component common
+@import "../node_modules/normalize.css/normalize.css";
+@import "components/common.components/common/colors";
+@import "components/common.components/common/fonts";
+@import "components/common.components/common/main";
+// component wrapper
+@import "components/common.components/wrapper/wrapper";
+
+// desktop.components
+@import "components/desktop.components/common/media";
+
+// component articles
+@import "components/desktop.components/articles/articles";
+
+// component users
+@import "components/desktop.components/users/users";
+
+// touch.components
+@import "components/touch.components/common/media";

@@ -1,0 +1,81 @@
+$border: 1px solid #ccc;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding-top: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logo {
+  //   background-image: url("./images/webpack-logo.png");
+  background-size: cover;
+  margin: 0 auto;
+  img {
+    height: 400px;
+    width: 400px;
+    padding: 0 30%;
+  }
+}
+
+.code {
+  color: chocolate;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: $border;
+
+  h2 {
+    text-align: center;
+    color: darkred;
+  }
+}
+
+header {
+  nav {
+    text-align: center;
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+  }
+}
+
+.all-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  a {
+      padding: 20px;
+      margin: 20px;
+      background-color: #ddd;
+      border-color: #00f;
+      border-radius: 10px;
+      min-width: 200px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &:hover{
+          font-style: italic;
+      }
+  }
+}
