@@ -4,24 +4,16 @@ import { ViteAliases } from "vite-aliases";
 import legacy from "@vitejs/plugin-legacy";
 import vitePugPlugin from "vite-plugin-pug-transformer";
 
-import pages from './vitejs/pages.config'
-
-const pagesInput = {}
-
-pages.forEach((page => {
-    pagesInput[page.name] = page.path
-}));
-
 export default defineConfig({
   root: "./src",
   build: {
     target: "es2017", // какой версии JS придерживается сборка
     outDir: "build", // в какую папку будет собираться проект
-    rollupOptions: {
-      input: {
-          ...pagesInput
-      } 
-  }
+  //   rollupOptions: {
+  //     input: {
+  //         ...pagesInput
+  //     } 
+  // }
   },
   server: {
     port: 3000,
